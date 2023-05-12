@@ -1,0 +1,735 @@
+/**/
+*
+{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0 ;
+    
+}
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+	  width:80rem;
+    height: 38rem;
+	  display:inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+}
+
+header 
+{
+    
+    height: 15%;
+    position: relative;   
+}
+
+.logo
+{
+  height: 85px;
+}
+.img
+{
+    height: 110%;
+    margin-bottom: 5%;
+    margin-left: 10%;   
+}
+
+.title
+{
+    width: auto;
+    float: right;
+    margin-right: 20%;
+    margin-top: 1%;
+    font-size: 180%;
+    text-align: center;
+
+
+}
+
+/*menu*/
+.menu ul {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position:absolute;
+    z-index: 1000;
+    
+}
+
+.menu a {
+    display:flex;
+    padding: 2.2em;
+    width:10.67em; 
+    background-color:darkcyan;
+    text-decoration: none;
+    color: #fff;
+}
+.toggle {
+  display: none;
+}
+/*tablet */
+@media (max-width:768px)
+{
+  .menu a
+  {
+    display:flex;
+    padding: 1.2em;
+    width:9.99em;
+    height: 5.60em; 
+    background-color:darkcyan;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu ul {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position:absolute;
+    z-index: 1000;
+  }
+    .slider {
+      position:absolute;
+      margin-top: 89px;
+      width: 100%;
+      height:auto;
+    }
+    
+    .slider ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; 
+    
+    }
+    
+    .slider ul li  {
+      position: relative;
+      display: none;
+      height:367px;
+    }
+    
+    .slider ul li img 
+    {
+      position: fixed;
+      height:100%;
+      width: 85.5rem;
+      
+    }
+    .link_menu
+{
+  height: 1.3em;
+}
+.menu a:hover {
+    background-color:cadetblue;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+
+/* slider */
+.slider {
+  position:absolute;
+  margin-top: 89px;
+  width: auto;
+  height:auto;
+}
+
+.slider ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+
+}
+
+.slider ul li  {
+  position: relative;
+  display: none;
+  height:367px;
+}
+
+.slider ul li img 
+{
+  position: fixed;
+  height:100%;
+  width: 85.5rem;
+  
+}
+
+/* buttons */
+.slider .buttons  {
+  display: flex;
+  position:fixed;
+  top:20rem;
+  width:  100%;
+}
+.slider .buttons .next {
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}    
+.slider .buttons .prev {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}   
+.slider .buttons .next:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+.slider .buttons .prev:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+
+/* slider animation */
+.slider ul li {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+.toggle 
+{
+  display: none;
+}
+    
+}
+  
+/*mobile*/
+  
+@media (max-width:425px)
+{
+  .menu a
+  {
+    display:flex;
+    padding: 1.2em;
+    width:100%; 
+    background-color:darkcyan;
+    text-decoration: none;
+    color: #fff;
+  }
+  .menu ul {
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position:absolute;
+    z-index: 1000;
+    
+}
+.slider {
+  position:absolute;
+  margin-top: 89px;
+  width: 100%;
+  height:100%;
+}
+
+.slider ul {
+  list-style-type: none;
+  margin: auto;
+  padding: auto; 
+
+}
+
+.slider ul li  {
+  position: relative;
+  display: none;
+  height:100%;
+}
+
+.slider ul li img 
+{
+  position: fixed;
+  height:100%;
+  width: 85.5rem;
+  
+}
+.link_menu
+{
+  height: 1.3em;
+}
+.menu a:hover {
+    background-color:cadetblue;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+/* slider */
+.slider {
+  position:absolute;
+  margin-top: 89px;
+  width: 100%;
+  height:auto;
+}
+
+.slider ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+
+}
+
+.slider ul li  {
+  position: relative;
+  display: none;
+  height:367px;
+}
+
+.slider ul li img 
+{
+  position: fixed;
+  height:100%;
+  width: 85.5rem;
+  
+}
+
+/* buttons */
+.slider .buttons  {
+  display: flex;
+  position:fixed;
+  top:25rem;
+  width:  100%;
+}
+.slider .buttons .next {
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}    
+.slider .buttons .prev {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}   
+.slider .buttons .next:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+.slider .buttons .prev:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+
+/* slider animation */
+.slider ul li {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+.toggle {
+  display: block;
+  order: 1;
+  font-size: 20px;
+}
+
+.title
+{
+    width: auto;
+    float: right;
+    margin-right: 20%;
+    margin-top: 5%;
+    font-size: 180%;
+    text-align: center;
+}
+.img
+{
+    height: 110%;
+    margin-top: 3%;
+    margin-left: 15%;   
+}
+
+}
+
+
+.link_menu
+{
+  height: 1.3em;
+}
+.menu a:hover {
+    background-color:cadetblue;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+
+
+
+
+/* slider */
+.slider {
+  position:absolute;
+  margin-top: 89px;
+  width: 100%;
+  height:auto;
+}
+
+.slider ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+
+}
+
+.slider ul li  {
+  position: relative;
+  display: none;
+  height:367px;
+}
+
+.slider ul li img 
+{
+  position: fixed;
+  height:100%;
+  width: 85.5rem;
+  
+}
+
+/* buttons */
+.slider .buttons  {
+  display: flex;
+  position:fixed;
+  top:25rem;
+  width:  100%;
+}
+.slider .buttons .next {
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+} 
+.buttons
+{
+  margin-top: 30rem;
+}   
+.slider .buttons .prev {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}   
+.slider .buttons .next:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+.slider .buttons .prev:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+
+/* slider animation */
+.slider ul li {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+
+
+.arti
+{
+  border: solid #fff;
+  margin-top: 0.5rem;
+  width: 53rem;
+  margin-left: 7rem;
+  padding: 1rem;
+  background-color: #fff;
+  font-family: 'Indie Flower', cursive;
+  
+}
+.Tonelada
+{
+  position: relative;
+  display: inline-block;
+  width: 50rem;
+  height: 1rem;
+  margin-left: 17rem;
+}
+
+.texto{
+  position: absolute;
+  top: 360%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  margin-left: 15rem;
+  text-align: center;
+}
+
+.texto1{
+  position: absolute;
+  top: 280%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  margin-left: 4rem;
+  text-align: center;
+}
+.texto2{
+  position: absolute;
+  top: 285%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  margin-left:8rem;
+  text-align: center;
+}
+.texto3{
+  position: absolute;
+  top: 285%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  margin-left:19rem;
+  text-align: center;
+}
+.texto4{
+  position: absolute;
+  top: 285%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  margin-left:17rem;
+  text-align: center;
+}
+.texto5{
+  position: absolute;
+  top: 285%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  margin-left:12rem;
+  text-align: center;
+}
+
+.texto6{
+  position: absolute;
+  top: 200%;
+  font-family:Verdana, Geneva, Tahoma;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+
+.fondo
+{
+  width: 50rem;
+  height: 10rem;
+  margin-top: 1%;
+  border:#fff solid;
+}
+/*parrafos*/
+p
+{
+  margin-top: 0.5rem;
+  font-family: 'Yeseva One', cursive;
+  
+}
+/*pagina anexas*/
+.body
+{
+  background-color: #EEEDED;
+}
+
+/*contenedor form*/
+.latel
+{
+  width: 19rem;
+  height: 18rem;
+  float: right;
+  margin-top: 0.6rem;
+  border:solid 1rem black;
+
+
+}
+/*Form*/
+.form
+{
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+/*Titulo convertidor*/
+.Tit_conv
+{
+  float: left;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+}
+
+/*input tonelada*/
+.input
+{
+  margin-top: 0.7rem;
+  height: 1.6rem;
+  width: 10rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+  /*background-image: linear-gradient(#DEF5E4, cadetblue);*/
+}
+/*input ingreso de numero*/
+.inp_ingreso
+{
+  margin-top: 0.3rem;
+  height: 1.4rem;
+  width: 10rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+}
+.inp_ingreso:hover
+{
+  border: solid grey 0.2rem;
+}
+/*icono */
+.icon 
+{
+  width: 8rem;
+  margin-left: 5.3rem;
+  margin-top: 0.3rem;
+}
+/*opciones a elegir*/
+.select
+{
+  margin-top: 0.2rem;
+  height: 1.4rem;
+  width: 10rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+}
+/*boton de convertir*/
+.convetir
+{
+  margin-top: 1.5rem;
+  height: 2rem;
+  width: 6rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-left: 3rem;  
+  border: solid black 0.15rem;
+  border-radius: 0.3rem;
+
+}
+/*input que muestra*/
+.muestratexto
+{
+  margin-top: 0.5rem;
+  height: 1.8rem;
+  width: 11rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-left: 0.7rem;
+  border: none;
+  background-color: #fff;
+  border: black solid;
+  border-radius: 0.3rem;
+
+}
+
+
+
+.cuadro_img
+{
+  display: inline-block;
+  
+}
+.img2
+{
+  margin-left: 2rem;
+}
+
+.img1
+{
+  margin-left: 1rem;
+}
+
+.asidelate
+{
+  display:inline-flex;
+  margin-top: 2rem;
+  float: right;
+}
+
+.img3
+{
+  margin-top: 1rem;
+  margin-left: 13rem;
+}
+
+.img4
+{
+  margin-top: 1rem;
+  margin-left: 9rem;
+}
+
+.img5
+{
+  width: 15rem;
+  margin-top: 1rem;
+  margin-left: 15rem;
+}
+
+.img6
+{
+  width: 20rem;
+  margin-top: 1rem;
+  margin-left: 15rem;
+}
+.img7
+{
+  width: 25rem;
+  height: 13rem;
+  margin-top: 1rem;
+  margin-left: 12rem;
+}
+.asidelate2
+{
+float:right;
+margin-right: 7rem;
+margin-top: 2rem;
+  
+}
